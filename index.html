@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Damla Altıntaş</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <!-- <li><a href="#projects">Projects</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Damla Altıntaş</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <!-- <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Damla Altıntaş profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Damla Altıntaş</h1>
+        <p class="section__text__p2">Computer Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/damlaaltintas/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/damlaaltintas'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Computer Engineering<br />
+              <p>Manisa Celal Bayar University</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/languages.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Languages</h3>
+              <p>Turkish (Native)</p>
+              <p>English (Advanced)</p>
+              <p>Spanish (Pre-intermediate)</p>
+              <p>German (Pre-intermediate)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I graduated in Computer Engineering (100% English) in July 2025 from Manisa Celal Bayar University. My experience spans software development, AI-powered mobile applications with Flutter, SAP ABAP, SQL, Python, process automation, and Microsoft Office tools, complemented by strong soft skills.
+
+Beyond technical expertise, I bring an international perspective. I studied abroad for one academic year at the University of Almería in Spain and actively engaged in international youth projects, sustainability initiatives, and volunteer organisations, where I also took on leadership roles.
+
+What truly defines me is my passion for combining technology with social impact. I enjoy building solutions that are not only functional but also meaningful for communities.
+Outside of engineering, I love exploring new languages and cultures, and I also enjoy salsa and bachata dancing.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+     <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Internships</h2>
+                    <div class="timeline-container">
+                        <div class="timeline-item">
+                            <div class="timeline-date">02/2025 to 06/2025</div>
+                            <div class="timeline-company">Maxion Wheels | Manisa, Turkey</div>
+                            <h3 class="timeline-title">IT and SAP Support Intern</h3>
+                            <p class="timeline-description">SAP MM & FI modules, BAPI, BDC, RFC, user roles & authorizations, SAP Basis tasks developed reports, Power Automate OCR flows, and project documentation.</p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">08/2022 to 06/2023</div>
+                            <div class="timeline-company">İnci GS Yuasa | Manisa, Turkey</div>
+                            <h3 class="timeline-title">IT Intern</h3>
+                            <p class="timeline-description">Flutter mobile app development. MiniApp development called 'AkümGelsin' for 'İş Bankası' app. IT support.</p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">06/2023 to 11/2023</div>
+                            <div class="timeline-company">Balık Arts | Cambridge, United Kingdom</div>
+                            <h3 class="timeline-title">Remote Intern</h3>
+                            <p class="timeline-description">Software and website support, project management, online research, event and festival planning, social media strategies and content planning.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Volunteering</h2>
+                    <div class="timeline-container">
+                        <div class="timeline-item">
+                            <div class="timeline-date">03/2022 to 03/2023</div>
+                            <div class="timeline-company">Konak Municipality Youth Council</div>
+                            <h3 class="timeline-title">Volunteer Councilor</h3>
+                            <p class="timeline-description">Volunteered in the local youth council and community development projects. Contributed to municipal decision-making processes, organized civic engagement activities, and promoted youth participation in local governance and sustainable development initiatives.</p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">09/2021 to 06/2022</div>
+                            <div class="timeline-company">Change Leaders Association</div>
+                            <h3 class="timeline-title">Sparkle </h3>
+                            <p class="timeline-description">Social responsibility project, project management, team work.</p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">Since 11/2020</div>
+                            <div class="timeline-company">Balık Arts</div>
+                            <h3 class="timeline-title">Volunteer Intern</h3>
+                            <p class="timeline-description">Software and website support, project management, online research, event and festival planning, social media strategies and content planning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+        />
+    <!-- </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proje1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SustainMeal Solutions</h2>
+            <p>Graduation Project</p> 
+           <div class="btn-container">
+               <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            <!-- </div> 
+          </div> 
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proje2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/damlaaltintas/portfolio'"
+              >
+                Github
+              </button> -->
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            <!-- </div>
+          </div> -->
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section> 
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">damlaaltintas777@hotmail.com</a></p>
+        </div>
+        <br>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/damlaaltintas/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <!-- <li><a href="#projects">Projects</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Damla Altıntaş. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
